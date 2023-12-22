@@ -10,9 +10,9 @@
     margin-bottom: 20px;
 }
 
-.landing__Banner {
+.img__land {
     width: 100%;
-    height: 100%;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,14 @@
 .section__aboutUs {
     height: 400px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
     padding: 30px;
     width: 100%;
+    align-items: center;
 }
 
 .aboutUs__Info {
-    padding: 15px;
+    padding: 30px;
     border: 2px solid black;
     border-radius: 10px;
     width: 50%;
@@ -41,12 +41,13 @@
 }
 
 .team__icon {
-    height: 100%;
-    width: 30%;
+    height: 85%;
+    width: 20%;
 }
 
 .team__icon img {
     background-size: cover;
     height: 100%;
     width: 100%;
+    border-radius: 50%;
 }

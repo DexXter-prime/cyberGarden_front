@@ -1,16 +1,13 @@
 import React from 'react';
-import landing from '../../assets/imgs/landing.png'
-import styles from './Landing.module.css'
-import teamImg from '../../assets/imgs/img-aboutUs.png'
+import landing from '../../assets/imgs/img-landBig.png';
+// import landing from '../../assets/imgs/landing.png';
+import styles from './Landing.module.css';
+import teamImg from '../../assets/imgs/img-aboutUs.png';
 
 const Landing = () => {
     return (
         <div className={styles.landing_page}>
-            <section className={styles.section__train}>
-                <div className={styles.landing__Banner}>
-                    <img src={landing} />
-                </div>
-            </section>
+            <img className={styles.img__land} src={landing} alt="land" />
             <section className={styles.section__aboutUs}>
                 <div className={styles.aboutUs__Info}>
                     <h2 className={styles.aboutUs}>О нас</h2>
