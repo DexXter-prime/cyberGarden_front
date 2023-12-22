@@ -1,0 +1,14 @@
+.even {
+    background: lightgray;
+}
+
+.odd {
+    background: white;
+}
+
+.overTime div {
+    background: orangered;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+}

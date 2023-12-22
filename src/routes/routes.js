@@ -1,13 +1,14 @@
-import Main from "../pages/Main";
+import Operations from "../pages/Operations";
 import Registration from "../pages/RegistrationComponent/Registration";
 
 export const routes = [
     {
-        path: '/main',
-        element: Main
+        path: '/operations',
+        element: Operations
     },
     {
         path: '/registration',
         element: Registration
-    }
+    },
+
 ]
