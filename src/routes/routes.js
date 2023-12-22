@@ -1,5 +1,6 @@
 import Main from "../pages/Main";
 import Second from "../pages/Second";
+import Login from "../pages/Login";
 
 export const routes = [
     {
@@ -9,5 +10,9 @@ export const routes = [
     {
         path: '/second',
         element: Second
+    },
+    {
+        path: '/third',
+        element: Login
     }
 ]
