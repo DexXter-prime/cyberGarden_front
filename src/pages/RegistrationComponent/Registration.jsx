@@ -384,6 +384,7 @@ const Registration = () => {
                     </div>
                 </div>
             </section>
+            <button className={styles.btn_save}>Сохранить операцию</button>
         </div>
     );
 };

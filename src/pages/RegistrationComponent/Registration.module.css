@@ -70,3 +70,18 @@
     display: flex;
     justify-content: space-between;
 }
+
+.btn_save {
+    float: right;
+    margin-right: 5px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 10px;
+    background-color: #15386C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
