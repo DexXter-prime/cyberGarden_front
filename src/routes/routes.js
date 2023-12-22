@@ -1,5 +1,5 @@
 import Main from "../pages/Main";
-import Second from "../pages/Second";
+import Registration from "../pages/RegistrationComponent/Registration";
 
 export const routes = [
     {
@@ -7,7 +7,7 @@ export const routes = [
         element: Main
     },
     {
-        path: '/second',
-        element: Second
+        path: '/registration',
+        element: Registration
     }
 ]

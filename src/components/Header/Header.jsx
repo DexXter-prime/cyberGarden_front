@@ -20,7 +20,7 @@ const Header = () => {
                     <Link to="/main">Первая</Link>
                 </p>
                 <p className={styles.menu_link}>
-                    <Link to="/second">Вторая</Link>
+                    <Link to="/registration">Регистрация операций</Link>
                 </p>
             </div>
         </div>
