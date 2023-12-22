@@ -1,0 +1,52 @@
+.landing_page {
+    width: 100%;
+    height: 100%;
+}
+
+.section__train {
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.landing__Banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__aboutUs {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    width: 100%;
+}
+
+.aboutUs__Info {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.team__icon {
+    height: 100%;
+    width: 30%;
+}
+
+.team__icon img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

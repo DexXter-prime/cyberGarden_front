@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital@1&family=Pattaya&family=Poppins:wght@200&display=swap');
+
+
+:root {
+    --font_mont: 'Montserrat'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    font-family: var(--font_mont);
+}
