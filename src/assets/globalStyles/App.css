@@ -2,7 +2,8 @@
 
 
 :root {
-    --font_mont: 'Montserrat'
+    --font_mont: 'Montserrat';
+    --width_container: 1100px;
 }
 
 * {

@@ -1,18 +1,18 @@
-import Main from "../pages/Main";
-import Second from "../pages/Second";
+import Operations from "../pages/Operations";
 import Login from "../pages/Login";
+import Registration from "../pages/RegistrationComponent/Registration";
 
 export const routes = [
     {
-        path: '/main',
-        element: Main
+        path: '/operations',
+        element: Operations
     },
     {
-        path: '/second',
-        element: Second
-    },
-    {
-        path: '/third',
+        path: '/login',
         element: Login
+    },
+    {
+        path: '/registration',
+        element: Registration
     }
 ]
