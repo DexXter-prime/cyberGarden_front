@@ -17,6 +17,9 @@ const Header = () => {
                     <Link to="/operations">Отображение операций</Link>
                 </p>
                 <p className={styles.menu_link}>
+                    <Link to="/trains">Поезда</Link>
+                </p>
+                <p className={styles.menu_link}>
                     <Link to="/registration">Регистрация операций</Link>
                 </p>
                 <p className={styles.menu_link}>

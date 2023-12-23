@@ -15,11 +15,11 @@ const Trains = () => {
 
     const rows = [
         { id: 1, name: 'John Doe', age: [1, 2, 3] },
-        { id: 2, name: 'Jane Doe', age: [1, 2, 3, 1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3, 1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,1, 2, 3,] },
+        { id: 2, name: 'Jane Doe', age: [3, 1, 2] },
     ];
 
     return (
-        <div>
+        <div className={styles.container}>
             <button onClick={show}>CLICK ME!!!</button>
             {
                 isVisible &&  <Modal closeModal={close}>
@@ -64,5 +64,4 @@ const Trains = () => {
     );
 };
 
-export default Trains
-
+export default Trains;
