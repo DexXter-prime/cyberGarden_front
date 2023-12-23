@@ -40,3 +40,12 @@
      color: #ffff;
      margin: 0;
  }
+
+ @media (max-width: 600px) {
+    .title {
+        font-size: 16px;
+    }
+    .contact_text {
+        font-size: 16px;
+    }
+ }

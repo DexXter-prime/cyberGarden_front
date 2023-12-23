@@ -38,3 +38,21 @@
     text-decoration: none;
     color: black;
 }
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: flex-start;
+    }
+
+    .menu_link {
+        font-size: 18px;
+    }
+}

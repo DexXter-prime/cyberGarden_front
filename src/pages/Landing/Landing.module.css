@@ -41,7 +41,6 @@
 }
 
 .team__icon {
-    height: 85%;
     width: 20%;
 }
 
@@ -50,4 +49,44 @@
     height: 100%;
     width: 100%;
     border-radius: 50%;
+}
+
+@media (max-width: 1040px) {
+    .img__land {
+        height: 600px;
+    }
+}
+
+@media (max-width: 920px) {
+    .img__land {
+        height: 500px;
+    }
+    .section__aboutUs {
+        height: 430px;
+    }
+}
+
+@media (max-width: 700px) {
+    .img__land {
+        height: 400px;
+    }
+    .section__aboutUs {
+        height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section__aboutUs {
+        height: 550px;
+    }
+}
+
+@media (max-width: 500px) {
+    .img__land {
+        height: 300px;
+    }
+    .aboutUs__Info {
+        padding: 20px 10px;
+        font-size: 12px;
+    }
 }
