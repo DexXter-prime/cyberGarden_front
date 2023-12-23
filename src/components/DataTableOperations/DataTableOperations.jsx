@@ -54,6 +54,78 @@ const DataTableOperations = () => {
             'min-len': '29',
             begin: '16.01.2023 11:32',
             end: '28.07.2001'
+        },{
+
+            id: 5,
+            number: 5,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
+        },{
+
+            id: 6,
+            number: 6,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
+        },{
+
+            id: 7,
+            number: 7,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
+        },{
+
+            id: 8,
+            number: 8,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
+        },{
+
+            id: 9,
+            number: 9,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
+        },{
+
+            id: 10,
+            number: 10,
+            name: 'Hello',
+            'loc-num': 'World',
+            vagons: 8,
+            from: 'Новокузнецк Северный, Парк И путь № 1',
+            where: 'Новокузнецк Северный, Парк И путь № 3',
+            'min-len': '29',
+            begin: '16.01.2023 11:32',
+            end: '28.07.2001'
         },
     ];
 
@@ -90,7 +162,7 @@ const DataTableOperations = () => {
 
 
     return (
-        <div className={styles.wrapper}>
+        <>
             <DataGrid
                 rows={rows}
                 columns={columns}
@@ -102,7 +174,7 @@ const DataTableOperations = () => {
                     return ''
                 }}
             />
-        </div>
+        </>
     );
 };
 

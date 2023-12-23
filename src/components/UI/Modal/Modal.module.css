@@ -1,0 +1,26 @@
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal__window {
+    background: white;
+    color: black;
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
