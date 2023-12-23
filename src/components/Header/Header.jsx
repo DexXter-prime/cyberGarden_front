@@ -14,9 +14,6 @@ const Header = () => {
 
             <div className={styles.menu}>
                 <p className={styles.menu_link}>
-                    <Link to="/">Лендос</Link>
-                </p>
-                <p className={styles.menu_link}>
                     <Link to="/operations">Отображение операций</Link>
                 </p>
                 <p className={styles.menu_link}>
