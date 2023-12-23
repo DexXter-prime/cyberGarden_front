@@ -3,12 +3,13 @@
     margin-right: 50px;
     margin-top: 40px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .section__date {
     margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 30px;
     margin-bottom: 40px;
 }
@@ -30,12 +31,13 @@
     display: flex;
     flex-direction: column;
     background-color: #F7F7F9;
-    margin-right: 120px;
     padding: 20px;
     border-radius: 20px;
 }
 
 .textarea__comment {
+    width: 905px;
+    height: 128px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -69,6 +71,7 @@
 .cont_wagon {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .btn_save {
@@ -84,4 +87,89 @@
     line-height: normal;
     color: #FFFFFF;
     margin-bottom: 40px;
+}
+
+.cont__dropdown {
+    width: 286px;
+}
+
+.cont__dropdown_S {
+    width: 200px;
+}
+
+@media (max-width: 1270px) {
+    .textarea__comment {
+        width: 453px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 1047px) {
+    .cont__dropdown {
+        width: 200px;
+    }
+    .cont__operation {
+        width: 150px;
+    }
+    .cont__dropdown_S {
+        width: 150px;
+    }
+}
+
+@media (max-width: 812px) {
+    .cont__dropdown {
+        width: 144px;
+    }
+    .section__date {
+        display: flex;
+        flex-direction: column;
+    }
+    .textarea__comment {
+        width: 300px;
+        height: 100px;
+    }
+    .cont__dropdown_S {
+        width: 115px;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section__operation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section__date {
+        display: flex;
+        flex-direction: column;
+    }
+    .textarea__comment {
+        width: 250px;
+    }
+    .cont__dropdown {
+        width: 200px;
+    }
+    .section_wagon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont_wagon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont__operation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cont__dropdown_S {
+        width: 150px;
+    }
 }

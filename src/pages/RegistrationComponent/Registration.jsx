@@ -23,138 +23,153 @@ const Registration = () => {
                 <div className={styles.section__time}>
                     <label>Длительность, мин: </label>
                     <label>норматив/отклонение: </label>
-                    <textarea className={styles.textarea__comment} placeholder='Введите текст комментария' cols={120} rows={7} />
+                    <textarea className={styles.textarea__comment} placeholder='Введите текст комментария' />
                 </div>
             </section>
 
             <section className={styles.section__operation}>
                 <div className={styles.cont__operation}>
                     <label>Вид операции</label>
-                    <FormControl sx={{minWidth: 286}}>
-                        <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
-                        <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        onChange={handleChange}
-                        >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                        </Select>
-                    </FormControl>
+                    <div className={styles.cont__dropdown}>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
+                            <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={age}
+                            label="Age"
+                            onChange={handleChange}
+                            >
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </div>
+
                 </div>
 
                 <div className={styles.cont__operation}>
                     <label>Операция</label>
-                    <FormControl sx={{minWidth: 286}}>
-                        <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
-                        <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        onChange={handleChange}
-                        >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                        </Select>
-                </FormControl>
+                    <div className={styles.cont__dropdown}>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
+                            <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={age}
+                            label="Age"
+                            onChange={handleChange}
+                            >
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                            </Select>
+                    </FormControl>
+                    </div>
                 </div>
 
                 <div className={styles.cont__operation}>
                     <label>Причина</label>
-                    <FormControl sx={{minWidth: 286}}>
-                        <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
-                        <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={age}
-                        label="Age"
-                        onChange={handleChange}
-                        >
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
-                        </Select>
-                    </FormControl>
+                    <div className={styles.cont__dropdown}>
+                        <FormControl fullWidth>
+                            <InputLabel id="demo-simple-select-label">Выберите из списка</InputLabel>
+                            <Select
+                            labelId="demo-simple-select-label"
+                            id="demo-simple-select"
+                            value={age}
+                            label="Age"
+                            onChange={handleChange}
+                            >
+                            <MenuItem value={10}>Ten</MenuItem>
+                            <MenuItem value={20}>Twenty</MenuItem>
+                            <MenuItem value={30}>Thirty</MenuItem>
+                            </Select>
+                        </FormControl>
+                    </div>
                 </div>
             </section>
 
             <section className={styles.section_wagon}>
                 <div className={styles.cont_wagon}>
                     <div className={styles.cont__operation}>
-                        <label>Станция отправления</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <label className={styles.label_text}>Станция отправления</label>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Парк отправления</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Путь отправления</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Вагоны</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
                 </div>
 
@@ -162,74 +177,82 @@ const Registration = () => {
                 <div className={styles.cont_wagon}>
                     <div className={styles.cont__operation}>
                         <label>Станция назначения</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Парк назначения</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Путь назначения</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Направление подачи</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -238,74 +261,82 @@ const Registration = () => {
                 <div className={styles.cont_wagon}>
                     <div className={styles.cont__operation}>
                         <label>Локомотив №1</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Локомотив №2</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Локомотив №3</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>Локомотив №4</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
                 </div>
 
@@ -313,74 +344,82 @@ const Registration = () => {
                 <div className={styles.cont_wagon}>
                     <div className={styles.cont__operation}>
                         <label>ФИО машиниста</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>ФИО машиниста</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>ФИО машиниста</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
 
                     <div className={styles.cont__operation}>
                         <label>ФИО машиниста</label>
-                        <FormControl sx={{minWidth: 200}}>
-                            <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
-                            <Select
-                            labelId="demo-simple-select-label"
-                            id="demo-simple-select"
-                            value={age}
-                            label="Age"
-                            onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Ten</MenuItem>
-                            <MenuItem value={20}>Twenty</MenuItem>
-                            <MenuItem value={30}>Thirty</MenuItem>
-                            </Select>
-                        </FormControl>
+                        <div className={styles.cont__dropdown_S}>
+                            <FormControl fullWidth>
+                                <InputLabel id="demo-simple-select-label">Выберите</InputLabel>
+                                <Select
+                                labelId="demo-simple-select-label"
+                                id="demo-simple-select"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                                >
+                                <MenuItem value={10}>Ten</MenuItem>
+                                <MenuItem value={20}>Twenty</MenuItem>
+                                <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
                     </div>
                 </div>
             </section>
