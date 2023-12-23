@@ -11,7 +11,7 @@ const ItemType = 'AGE_BLOCK';
 
 
 
-const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => {
+const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner, filterValues }) => {
     const [isVisible, show, close] = useModal()
 
     const ownerColors = {
@@ -29,6 +29,7 @@ const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => 
     };
 
   const getColorForOwner = (ownerValue) => ownerColors[ownerValue];
+  const isVisibleFilter = filterValues.wagonType === '';
 
   const [{ isDragging }, ref] = useDrag({
     type: ItemType,
@@ -90,7 +91,7 @@ const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => 
             </Modal>
         }
           <div ref={(node) => ref(drop(node))} style={{
-              opacity: isDragging ? 0.5 : 1,
+              opacity: isDragging ? 0.5 : isVisibleFilter ? 0.6 : 1,
               cursor: 'move',
               backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
           }}
@@ -104,7 +105,7 @@ const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => 
   );
 };
 
-const MyTable = ({ columns, initialRows }) => {
+const MyTable = ({ columns, initialRows, filterValues }) => {
   const [checkedRows, setCheckedRows] = useState(initialRows.filter((row) => row.status).map((row) => row.name))
   const [rows, setRows] = React.useState(() => [...initialRows]);
 
@@ -173,6 +174,7 @@ const MyTable = ({ columns, initialRows }) => {
                               columnIndex={index}
                               moveBlock={moveBlock}
                               owner={row.owner}
+                              filterValues={filterValues}
                             />
                           ))}
                       </div>
