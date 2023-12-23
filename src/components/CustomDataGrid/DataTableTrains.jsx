@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { useDrag, useDrop, DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { Table, TableHead, TableBody, TableRow, TableCell, Paper } from '@mui/material';
+import styles from './DataTable.module.css'
+import {useModal} from "../../hooks/useModal";
+import Modal from "../UI/Modal/Modal";
+import Checkbox from "../UI/Checkbox/Checkbox";
 
 const ItemType = 'AGE_BLOCK';
 
+
+
 const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => {
+    const [isVisible, show, close] = useModal()
+
     const ownerColors = {
         'HTC': 'red',
         'GK': 'blue',
@@ -42,18 +50,78 @@ const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => 
   });
 
   return (
-    <div ref={(node) => ref(drop(node))} style={{
-        opacity: isDragging ? 0.5 : 1,
-        cursor: 'move',
-        backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
-    }}>
-      {age}
-    </div>
+      <>
+        {
+            isVisible &&  <Modal closeModal={close}>
+              <div className={styles.modal}>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+                <div>
+                  <h3>Текс</h3>
+                  <p>Описание</p>
+                </div>
+              </div>
+            </Modal>
+        }
+          <div ref={(node) => ref(drop(node))} style={{
+              opacity: isDragging ? 0.5 : 1,
+              cursor: 'move',
+              backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
+          }}
+               className={styles.train__Item}
+               onClick={show}
+
+          >
+              {age}
+          </div>
+      </>
   );
 };
 
 const MyTable = ({ columns, initialRows }) => {
+  const [checkedRows, setCheckedRows] = useState(initialRows.filter((row) => row.status).map((row) => row.name))
   const [rows, setRows] = React.useState(() => [...initialRows]);
+
+  const handleCheck = (event, name) => {
+    if (event.target.checked) {
+      setCheckedRows(prev => [...prev, name])
+    } else {
+      let newList = [...checkedRows]
+      newList.splice(checkedRows.indexOf(name), 1)
+      setCheckedRows(newList)
+    }
+
+  }
+
+  useEffect(() => {
+    console.log(checkedRows)
+  }, [checkedRows])
 
   const moveBlock = (fromRowIndex, fromColumnIndex, toRowIndex, toColumnIndex, age) => {
     setRows((prevRows) => {
@@ -91,8 +159,11 @@ const MyTable = ({ columns, initialRows }) => {
               <TableRow key={row.id}>
                 {columns.map((column, columnIndex) => (
                   <TableCell key={column.id}>
-                    {column.id === 'age' ? (
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                    {
+                      column.id === 'id' && <Checkbox label={row[column.id]} checked={checkedRows.includes(row.name)} onChange={(e) => handleCheck(e, row.name)} />
+                    }
+                    {column.id === 'age' && (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 20 }}>
                         {row.age &&
                           row.age.map((age, index) => (
                             <DraggableAgeBlock
@@ -105,9 +176,10 @@ const MyTable = ({ columns, initialRows }) => {
                             />
                           ))}
                       </div>
-                    ) : (
-                      row[column.id]
                     )}
+                    {
+                      !['age', 'id'].includes(column.id) && row[column.id]
+                    }
                   </TableCell>
                 ))}
               </TableRow>

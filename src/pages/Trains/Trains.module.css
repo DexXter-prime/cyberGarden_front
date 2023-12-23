@@ -3,13 +3,6 @@
     padding-top: 40px;
 }
 
-.modal {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-
 .backdrop {
     position: fixed;
     inset: 0;
