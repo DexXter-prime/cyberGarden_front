@@ -14,8 +14,8 @@ const Trains = () => {
     ]
 
     const rows = [
-        { id: 1, name: 'John Doe', age: [1, 2, 3] },
-        { id: 2, name: 'Jane Doe', age: [3, 1, 2] },
+        { id: 1, name: 'John Doe', age: [1, 2, 3], owner: ['HTC', 'GK', 'OTHER'] },
+        { id: 2, name: 'Jane Doe', age: [3, 1, 2], owner: ['GK', 'HTC', 'OTHER'] },
     ];
 
     return (

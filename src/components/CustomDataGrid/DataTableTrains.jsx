@@ -5,7 +5,23 @@ import { Table, TableHead, TableBody, TableRow, TableCell, Paper } from '@mui/ma
 
 const ItemType = 'AGE_BLOCK';
 
-const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock }) => {
+const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock, owner }) => {
+    const ownerColors = {
+        'HTC': 'red',
+        'GK': 'blue',
+        'ATL': 'green',
+        'PGK': 'orange',
+        'MOD': 'purple',
+        'RJD': 'brown',
+        'NPK': 'pink',
+        'FGK': 'teal',
+        'MECH': 'cyan',
+        'AGENT': 'lime',
+        'OTHER': 'grey'
+    };
+
+  const getColorForOwner = (ownerValue) => ownerColors[ownerValue];
+
   const [{ isDragging }, ref] = useDrag({
     type: ItemType,
     item: { age, rowIndex, columnIndex },
@@ -26,7 +42,11 @@ const DraggableAgeBlock = ({ age, rowIndex, columnIndex, moveBlock }) => {
   });
 
   return (
-    <div ref={(node) => ref(drop(node))} style={{ opacity: isDragging ? 0.5 : 1, cursor: 'move', }}>
+    <div ref={(node) => ref(drop(node))} style={{
+        opacity: isDragging ? 0.5 : 1,
+        cursor: 'move',
+        backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
+    }}>
       {age}
     </div>
   );
@@ -81,6 +101,7 @@ const MyTable = ({ columns, initialRows }) => {
                               rowIndex={rowIndex}
                               columnIndex={index}
                               moveBlock={moveBlock}
+                              owner={row.owner}
                             />
                           ))}
                       </div>
