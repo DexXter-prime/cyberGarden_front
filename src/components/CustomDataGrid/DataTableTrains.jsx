@@ -38,7 +38,6 @@ const DraggableLocomotive = ({ locomotive, rowIndex,  moveBlock, columnIndex}) =
     return (
         <div ref={(node) => ref(drop(node))} style={{
             opacity: isDragging ? 0.5 : isVisibleFilter ? 0.6 : 1,
-            cursor: 'move',
             width: 20,
             height: 20,
             background: 'black'
@@ -85,7 +84,7 @@ const DraggableAgeBlock = ({ wagon, rowIndex, columnIndex, moveBlock, owner, fil
     accept: ItemType,
     hover: (item) => {
       if (item.rowIndex !== rowIndex || item.columnIndex !== columnIndex) {
-        moveBlock(item.rowIndex, item.columnIndex, rowIndex, columnIndex, item.wagons);
+        moveBlock(item.rowIndex, item.columnIndex, rowIndex, columnIndex, item.wagon);
         item.rowIndex = rowIndex;
         item.columnIndex = columnIndex;
       }
@@ -200,10 +199,10 @@ const MyTable = ({ initialRows, filterValues }) => {
 
     const columns = [
         { id: 'id', label: '№ Пути', width: 20, align: 'center' },
-        { id: 'left', label: 'Левый', width: 10, align: 'center'},
+        { id: 'left', label: 'Левый Лок.', width: 10, align: 'center'},
         { id: 'name', label: 'Название', width: 20, align: 'center' },
-        { id: 'wagons', label: 'Л', width: 100, align: 'center' },
-        { id: 'right', label: 'Правый', width: 10, align: 'center'},
+        { id: 'wagons', label: 'Вагоны', width: 100, align: 'center' },
+        { id: 'right', label: 'Правый Лок.', width: 10, align: 'center'},
     ]
 
     const [checkedRows, setCheckedRows] = useState(rows.filter((row) => row.status).map((row) => row.name))
