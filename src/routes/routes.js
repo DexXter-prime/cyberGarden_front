@@ -1,24 +1,33 @@
 import Operations from "../pages/Operations";
 import Login from "../pages/Login";
 import Registration from "../pages/RegistrationComponent/Registration";
-import Trains from "../pages/Trains/Trains";
 import Stations from "../pages/Stations";
+import LogOut from "../pages/LogOut";
 
 export const routes = [
     {
         path: '/operations',
-        element: Operations
+        element: Operations,
+        isPrivate: true,
     },
     {
         path: '/login',
-        element: Login
+        element: Login,
+        isPrivate: false
     },
     {
         path: '/registration',
-        element: Registration
+        element: Registration,
+        isPrivate: true
     },
     {
         path: '/stations',
-        element: Stations
-    }
+        element: Stations,
+        isPrivate: true
+    },
+    {
+        path: '/logout',
+        element: LogOut,
+        isPrivate: true
+    },
 ]

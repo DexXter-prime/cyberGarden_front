@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './Header.module.css'
 import logo from '../../assets/imgs/logo.svg'
 import {Link} from "react-router-dom";
+import {PrivateLinks, PublicLinks} from "./index";
+import {AuthContext} from "../../hoc/AuthProvider";
 
 const Header = () => {
+
+    const { user: auth } = useContext(AuthContext)
+
     return (
         <div className={styles.header}>
             <div className={styles.logo}>
@@ -13,22 +18,22 @@ const Header = () => {
             </div>
 
             <div className={styles.menu}>
-                <p className={styles.menu_link}>
-                    <Link to="/operations">Отображение операций</Link>
-                </p>
-                <p className={styles.menu_link}>
-                    <Link to="/trains">Поезда</Link>
-                </p>
-                <p className={styles.menu_link}>
-                    <Link to="/registration">Регистрация операций</Link>
-                </p>
-                <p className={styles.menu_link}>
-                    <Link to="/login">Логин</Link>
-                </p>
-                <p className={styles.menu_link}>
-                    <Link to="/stations">Станции</Link>
-                </p>
+                {auth ? PrivateLinks.map((link) =>
+                    <p key={link.link} className={styles.menu_link}>
+                        <Link to={link.link}>{link.text}</Link>
+                    </p>
+                )
+                    :
+                    PublicLinks.map((link) =>
+                            <p key={link.link} className={styles.menu_link}>
+                                <Link to={link.link}>{link.text}</Link>
+                            </p>
+
+                        )
+                }
             </div>
+
+
         </div>
     );
 };
