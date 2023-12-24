@@ -1,0 +1,157 @@
+{
+  "operationsTypesNorms": [
+    {
+      "operationId": 1,
+      "minutesNorma": 10
+    },
+    {
+      "operationId": 2,
+      "minutesNorma": 15
+    },
+    {
+      "operationId": 8,
+      "minutesNorma": 10
+    },
+    {
+      "operationId": 6,
+      "minutesNorma": 30
+    },
+    {
+      "operationId": 9,
+      "minutesNorma": 25
+    },
+    {
+      "operationId": 44,
+      "minutesNorma": 25
+    },
+    {
+      "operationId": 48,
+      "minutesNorma": 20
+    },
+    {
+      "operationId": 75,
+      "minutesNorma": 12
+    },
+    {
+      "operationId": 74,
+      "minutesNorma": 8
+    }
+  ],
+  "operationsTypes": [
+    {
+      "id": 1,
+      "name": "Поездная работа",
+      "operations": [
+        {
+          "id": 1,
+          "name": "Ведение поезда по перегону",
+          "operationTypeId": 1
+        },
+        {
+          "id": 2,
+          "name": "Движение локомотива резервом по перегону",
+          "operationTypeId": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Маневровая работа",
+      "operations": [
+        {
+          "id": 8,
+          "name": "Подача вагонов",
+          "operationTypeId": 2
+        },
+        {
+          "id": 6,
+          "name": "Перестановка вагонов",
+          "operationTypeId": 2
+        },
+        {
+          "id": 9,
+          "name": "Уборка вагонов",
+          "operationTypeId": 2
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Ремонтные работы",
+      "operations": [
+        {
+          "id": 44,
+          "name": "Замена неисправного локомотива (депо)",
+          "operationTypeId": 8
+        },
+        {
+          "id": 48,
+          "name": "Ремонт подвижного состава",
+          "operationTypeId": 8
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Грузовые",
+      "operations": [
+        {
+          "id": 75,
+          "name": "Погрузка",
+          "operationTypeId": 11
+        },
+        {
+          "id": 74,
+          "name": "Выгрузка",
+          "operationTypeId": 11
+        }
+      ]
+    }
+  ],
+  "operationReasonsList": [
+    {
+      "id": 1,
+      "title": "Формирование подачи под выгрузку"
+    },
+    {
+      "id": 2,
+      "title": "Подбор по характеристикам вагонов"
+    },
+    {
+      "id": 3,
+      "title": "Формирование маршрута"
+    },
+    {
+      "id": 4,
+      "title": "Выработка больных вагонов"
+    },
+    {
+      "id": 5,
+      "title": "Выработка грязных вагонов"
+    },
+    {
+      "id": 6,
+      "title": "Выравнивание шапок"
+    },
+    {
+      "id": 7,
+      "title": "Подбор по собственникам"
+    },
+    {
+      "id": 8,
+      "title": "Формирование порожняка на отправление"
+    },
+    {
+      "id": 9,
+      "title": "Подбор вагонов по качеству загруженного угля"
+    },
+    {
+      "id": 10,
+      "title": "Переформирование маршрута"
+    },
+    {
+      "id": 11,
+      "title": "Подбор инновационных вагонов"
+    }
+  ]
+}

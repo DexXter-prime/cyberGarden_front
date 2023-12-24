@@ -4,7 +4,8 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const {error, json} = require("./responceHelper");
 const getModels = require('./database');
-const data = require('./db.json')
+const data = require('./db2.json')
+const wagonDesc = require('./wagonDesc.json')
 
 const app = express();
 const port = 3000;
@@ -149,13 +150,28 @@ async function getParks(stationId) {
     });
 }
 
-app.get('/api/station/list/:id/operation/list', verifyToken, checkRole(['user', 'admin']), async (req, res) => {
-    res.json({'page': "operationsList"});
+app.get('/api/station/list/:id/operation/list', async (req , res) => {
+    const operations = models.Operation.findAll({
+        attributes: {exclude: ["createdAt", "updatedAt"]},
+        raw: true,
+        nest: true
+    })
+
+    json(res, operations)
 });
 
-app.post('/api/station/list/:id/operation/list/add', verifyToken, checkRole(['user', 'admin']), async (req, res) => {
-    res.json({'page': "operationsListAdd"});
+app.post('/api/station/list/:id/operation/list/add', async (req, res) => {
+    if (req.body) {
+        models.Operation.create(req.body);
+    }
 });
 
+app.get("/api/station/ownerList/", async (req, res) => {
+    json(res, wagonDesc.ownersList)
+})
+
+app.get("/api/station/wagonTypeList/", async (req, res) => {
+    json(res, wagonDesc.wagonTypeList)
+})
 
 app.listen(port, () => console.log('started'));

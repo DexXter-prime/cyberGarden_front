@@ -1,0 +1,33 @@
+{
+  "wagonTypeList": [
+    "HalfCarriage",
+    "Platform",
+    "RollPlatform",
+    "UsoPlatform",
+    "Hopper",
+    "Tank",
+    "CoveredCarriage",
+    "Sdpm",
+    "Sm2",
+    "Ppsm2",
+    "Pksm2",
+    "DgkMpt",
+    "Vprs",
+    "Uk",
+    "KranKj",
+    "GuideCarriage"
+  ],
+  "ownersList": [
+    "HTC",
+    "GK",
+    "ATL",
+    "PGK",
+    "MOD",
+    "RJD",
+    "NPK",
+    "FGK",
+    "MECH",
+    "AGENT",
+    "OTHER"
+  ]
+}

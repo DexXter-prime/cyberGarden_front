@@ -4,6 +4,7 @@ const LocomotiveModel = require('./locomotive-model');
 const WayModel = require('./way-model');
 const ParkModel = require('./park-model');
 const StationModel = require('./station-model');
+const OperationModel = require('./operation-model')
 const data = require("../db2.json");
 
 function initModels(sequelize) {
@@ -12,6 +13,7 @@ function initModels(sequelize) {
     const Way = WayModel(sequelize, DataTypes);
     const Locomotive = LocomotiveModel(sequelize, DataTypes);
     const Wagon = WagonModel(sequelize, DataTypes);
+    const Operation = OperationModel(sequelize, DataTypes);
 
     Wagon.belongsTo(Way);
     Locomotive.belongsTo(Way);
@@ -67,7 +69,8 @@ function initModels(sequelize) {
         Locomotive,
         Way,
         Park,
-        Station
+        Station,
+        Operation
     }
 }
 

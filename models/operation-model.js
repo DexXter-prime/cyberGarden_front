@@ -1,19 +1,36 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-  return sequelize.define('Locomotive', {
+  return sequelize.define('Operation', {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    inventoryNumber: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    startDate: {
+      type: DataTypes.DATE,
+      allowNull: false
     },
-    direction: {
+    endDate: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
+    operationName: DataTypes.STRING,
+    minutesNorma: DataTypes.INTEGER,
+    reasonId: DataTypes.INTEGER,
+    wagonsIds: DataTypes.ARRAY(DataTypes.INTEGER),
+    departureStation: DataTypes.INTEGER,
+    departurePark: DataTypes.INTEGER,
+    departureWay: DataTypes.INTEGER,
+    destinationStation: DataTypes.INTEGER,
+    destinationPark: DataTypes.INTEGER,
+    destinationWay: DataTypes.INTEGER,
+    supplyDirection: {
       type: DataTypes.ENUM,
       values: ["LEFT", "RIGHT"]
-    }
+    },
+    locomotiveId: DataTypes.INTEGER,
+    operationStatus: DataTypes.STRING,
+    comment: DataTypes.STRING
   });
 };
