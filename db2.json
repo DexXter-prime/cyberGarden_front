@@ -1,0 +1,866 @@
+{
+  "stationsData": [
+    {
+      "station": {
+        "id": 1,
+        "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ",
+        "parks": [
+          {
+            "park": {
+              "id": 10,
+              "name": "ТЭЦ",
+              "ways": [
+                {
+                  "id": 1,
+                  "name": "10A",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "53532685",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "HTC",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 2,
+                  "name": "8B",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 3,
+                  "name": "13Z",
+                  "locomotives": [],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "park": {
+              "id": 11,
+              "name": "НОВОКУЗНЕЦК-СЕВЕРНЫЙ",
+              "ways": [
+                {
+                  "id": 1,
+                  "name": "10A",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "53532685",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "HTC",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 2,
+                  "name": "8B",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 3,
+                  "name": "13Z",
+                  "locomotives": [],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "park": {
+              "id": 12,
+              "name": "ТАГАНРОГ-ЮЖНЫЙ",
+              "ways": [
+                {
+                  "id": 1,
+                  "name": "10A",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "53532685",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "HTC",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 2,
+                  "name": "8B",
+                  "locomotives": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "422412",
+                      "direction": "LEFT"
+                    }
+                  ],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 3,
+                  "name": "13Z",
+                  "locomotives": [],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                },
+                {
+                  "id": 4,
+                  "name": "13Z",
+                  "locomotives": [{
+                    "id": 3,
+                    "inventoryNumber": "422412",
+                    "direction": "LEFT"
+                  }],
+                  "wagons": [
+                    {
+                      "id": 1,
+                      "inventoryNumber": "93285",
+                      "position": 1,
+                      "type": "HalfCarriage",
+                      "isSick": true,
+                      "cargo": "LadenOutput",
+                      "operationState": "WithoutOperation",
+                      "idleDaysLength": 5,
+                      "owner": "ATL",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "TestNote2"
+                    },
+                    {
+                      "id": 2,
+                      "inventoryNumber": "214121",
+                      "position": 2,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "LadenInput",
+                      "operationState": "InProgress",
+                      "idleDaysLength": 11,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 75,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 42992,
+                      "isDirty": false,
+                      "note1": "TestNote1",
+                      "note2": "Note2"
+                    },
+                    {
+                      "id": 3,
+                      "inventoryNumber": "4523122",
+                      "position": 3,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "Finished",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    },
+                    {
+                      "id": 4,
+                      "inventoryNumber": "4523122",
+                      "position": 4,
+                      "type": "HalfCarriage",
+                      "isSick": false,
+                      "cargo": "Empty",
+                      "operationState": "NotArrived",
+                      "idleDaysLength": 5,
+                      "owner": "GK",
+                      "isWithHatch": false,
+                      "loadCapacity": 69.5,
+                      "daysToRepair": 96,
+                      "kilometersLeft": 212,
+                      "isDirty": false,
+                      "note1": "",
+                      "note2": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

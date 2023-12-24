@@ -4,6 +4,7 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const {error, json} = require("./responceHelper");
 const getModels = require('./database');
+const data = require('./db.json')
 
 const app = express();
 const port = 3000;
@@ -88,15 +89,6 @@ app.get('/api/station/list', async (req, res) => {
     json(res, stations)
 });
 
-const fillDatabaseWithData = async () => {
-    const station = await models.Station.create({ name: 'Ростов-главный' });
-    const park = await models.Park.create({ StationId: station.id, name: 'П1' });
-    const way = await models.Way.create({ ParkId: park.id, name: "10A" });
-    const wagon = await models.Wagon.create({ WayId: way.id, vagonType: "Tank", inventoryNumber: Math.floor(Math.random() * 9000) + 1000,
-        isDirty: false, isSick: false, owner: "HTC", loadCapacity: 70, daysToRepair: 2342, kilometersLeft: 234223 });
-    const locomotive = await models.Locomotive.create({ WayId: way.id, inventoryNumber: Math.floor(Math.random() * 9000) + 1000, direction: "LEFT"});
-};
-
 
 
 app.get('/api/station/list/:id', async (req, res) => {
@@ -110,22 +102,22 @@ app.get('/api/station/list/:id', async (req, res) => {
         for (const park_i in parks) {
             const ways = await models.Way.findAll({
                 attributes: {exclude: ["createdAt", "updatedAt"]},
-                where: {id: parks[park_i].id},
+                where: {ParkId: parks[park_i].id},
                 raw: true,
                 nest: true
-            })
+            });
 
             for (const way_i in ways) {
                 ways[way_i].locomotives = await models.Locomotive.findAll({
                     attributes: {exclude: ["createdAt", "updatedAt"]},
-                    where: {id: ways[way_i].id},
+                    where: {WayId: ways[way_i].id},
                     raw: true,
                     nest: true
                 })
 
                 ways[way_i].wagons = await models.Wagon.findAll({
                     attributes: {exclude: ["createdAt", "updatedAt"]},
-                    where: {id: ways[way_i].id},
+                    where: {WayId: ways[way_i].id},
                     raw: true,
                     nest: true
                 })
@@ -137,7 +129,6 @@ app.get('/api/station/list/:id', async (req, res) => {
         station.parks = parks;
         json(res, station)
     })
-
 });
 
 async function getStation(id) {
@@ -165,7 +156,6 @@ app.get('/api/station/list/:id/operation/list', verifyToken, checkRole(['user', 
 app.post('/api/station/list/:id/operation/list/add', verifyToken, checkRole(['user', 'admin']), async (req, res) => {
     res.json({'page': "operationsListAdd"});
 });
-
 
 
 app.listen(port, () => console.log('started'));
