@@ -25,6 +25,9 @@ const Header = () => {
                 <p className={styles.menu_link}>
                     <Link to="/login">Логин</Link>
                 </p>
+                <p className={styles.menu_link}>
+                    <Link to="/stations">Станции</Link>
+                </p>
             </div>
         </div>
     );

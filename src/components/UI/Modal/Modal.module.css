@@ -14,13 +14,8 @@
 }
 
 .modal__window {
-    background: white;
-    color: black;
-    border-radius: 20px;
+    background: #5D636D;
+    color: white;
     width: 350px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 101;
 }
