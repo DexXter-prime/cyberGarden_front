@@ -28,14 +28,13 @@ const Trains = () => {
     const [request, loadingStatus, errMsg] = useFetching(async (id) => {
         const res = await StationController.getStation(id)
         setStation(res.data);
-        console.log(res.data)
+        console.log(res.data);
     })
 
 
     useEffect(() => {
         request(id)
     }, [])
-
 
 
 
@@ -47,8 +46,6 @@ const Trains = () => {
         daysToRepair: '',
     });
 
-   // const parks = ['one', 'two', 'three']
-
     const applyFilters = () => {
         setFilterValues({
             owner: selectedOwner,
@@ -57,7 +54,6 @@ const Trains = () => {
             downtime: selectedDowntime,
             daysToRepair: selectedDaysToRepair,
         });
-        // Тут думаю сделаем отправка запроса большого на бек со всеми фильтрами
     };
 
     return (
@@ -153,7 +149,7 @@ const Trains = () => {
                     </FormControl>
                     <button className={styles.btn_save} onClick={applyFilters}>Применить фильтры</button>
                 </div>
-                { station?.parks?.map((park) => (
+                {station?.parks?.map((park) => (
                     <div key={park.id} className={styles.parkItem}>
                         <div className={styles.parkName}>
                             <h3>{park.name}</h3>

@@ -6,6 +6,9 @@ import styles from './DataTable.module.css'
 import {useModal} from "../../hooks/useModal";
 import Modal from "../UI/Modal/Modal";
 import Checkbox from "../UI/Checkbox/Checkbox";
+import {useFetching} from "../../hooks/useFetching";
+import {useFetcher, useLocation, useParams} from "react-router-dom";
+import StationController from "../../API/StationService/StationController";
 
 const ItemType = 'AGE_BLOCK';
 const ItemLocomotive = 'LOCO_BLOCK'
@@ -51,7 +54,7 @@ const DraggableLocomotive = ({ locomotive, rowIndex,  moveBlock, columnIndex}) =
 
 
 const DraggableAgeBlock = ({ wagon, rowIndex, columnIndex, moveBlock, owner, filterValues }) => {
-    const [isVisible, show, close] = useModal()
+    const [isVisible, show, close] = useModal();
 
     const ownerColors = {
         'HTC': 'red',
@@ -88,6 +91,24 @@ const DraggableAgeBlock = ({ wagon, rowIndex, columnIndex, moveBlock, owner, fil
       }
     },
   });
+
+  const getRandomColor = () => {
+    const letters = [
+      'red',
+      'blue',
+      'green',
+      'orange',
+      'purple',
+      'brown',
+      'pink',
+      'teal',
+      'cyan',
+      'lime',
+      'grey'
+    ]
+    return letters[Math.floor(Math.random() * letters.length)];
+};
+
   return (
       <>
         {
@@ -150,9 +171,10 @@ const DraggableAgeBlock = ({ wagon, rowIndex, columnIndex, moveBlock, owner, fil
             </Modal>
         }
           <div ref={(node) => ref(drop(node))} style={{
-              opacity: isDragging ? 0.5 : isVisibleFilter ? 0.6 : 1,
+              opacity: isDragging ? 0.5 : isVisibleFilter ? 0.6 : Math.random() > 0.5 ? 1 : 0.6,
               cursor: 'move',
-              backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
+              backgroundColor: getRandomColor()
+              // backgroundColor: Array.isArray(owner) ? getColorForOwner(owner[columnIndex % owner.length]) : 'white',
           }}
                className={styles.train__Item}
                onClick={show}
@@ -197,10 +219,6 @@ const MyTable = ({ initialRows, filterValues }) => {
     }
 
   }
-
-  useEffect(() => {
-    console.log(checkedRows)
-  }, [checkedRows])
 
   const moveBlock = (fromRowIndex, fromColumnIndex, toRowIndex, toColumnIndex, wagons) => {
     setRows((prevRows) => {
