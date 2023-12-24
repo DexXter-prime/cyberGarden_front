@@ -28,7 +28,7 @@ const Trains = () => {
     const [request, loadingStatus, errMsg] = useFetching(async (id) => {
         const res = await StationController.getStation(id)
         setStation(res.data);
-        console.log(res.data)
+        console.log(res.dataй)
     })
 
 
@@ -62,9 +62,9 @@ const Trains = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Название станции: {station.name}</h1>
+            <h1 style={{textAlign: 'center', marginBottom: '30px'}}>Название станции: {station.name}</h1>
             <DndProvider backend={HTML5Backend}>
-                <div className={styles.container__filter}>
+                <div style={{marginTop: '40px 0'}} className={styles.container__filter}>
                     <FormControl variant="filled" sx={{ m: 1, minWidth: 150 }}>
                         <InputLabel id="demo-simple-select-filled-label">Собственник</InputLabel>
                         <Select
